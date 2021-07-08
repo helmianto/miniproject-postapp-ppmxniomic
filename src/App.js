@@ -144,7 +144,7 @@ const App = () => {
                   <h4>Data Post</h4>                 
                 </Segment>
                 <Segment>
-                  <Input onChange={handleSearch} icon='search' placeholder='Cari Catatan' />
+                  <Input onChange={handleSearch} icon='search' placeholder='Cari Post' />
                   <br />
                   <br />                  
                   { posts.slice(pagesVisited, pagesVisited + dataPerPage).length > 0 ? 
@@ -175,7 +175,7 @@ const App = () => {
             <Grid.Row>
               <Grid.Column mobile={16} tablet={8} computer={8}></Grid.Column>
               <Grid.Column mobile={16} tablet={8} computer={8}>
-                <Segment>
+                <Segment textAlign='center'>
                   <Pagination
                     activePage={activePage}
                     onPageChange={handlePaginationChange}

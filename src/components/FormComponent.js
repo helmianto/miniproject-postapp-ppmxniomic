@@ -5,10 +5,10 @@ const FormComponent = ({formPost, onChange, onSubmit}) => {
     return (
         <Form>
             <Form.Field>
-                <Input onChange={onChange} value={formPost.title} name="title" icon='clipboard' type='text' iconPosition='left' placeholder='Judul post' />
+                <Input onChange={onChange} value={formPost.title} name="title" icon='clipboard' type='text' iconPosition='left' placeholder='Judul Post' />
             </Form.Field>
             <Form.Field>
-                <TextArea onChange={onChange} value={formPost.body} name="body" placeholder='Isikan body post' style={{ minHeight: 100 }} />
+                <TextArea onChange={onChange} value={formPost.body} name="body" placeholder='Isikan Body Post' style={{ minHeight: 100 }} />
             </Form.Field>
             <Button onClick={onSubmit} color='teal' fluid>Input</Button>
         </Form>   
