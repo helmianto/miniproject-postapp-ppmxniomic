@@ -4,16 +4,16 @@ import Post from './Post';
 import Put from './Put';
 
 //POST
-const postData = (data) => Post('data-post', false, data);
+const postData = (data) => Post('posts', false, data);
 
 //PUT
-const updateData = (data, id) => Put('data-post/'+ id, false, data);
+const updateData = (data, id) => Put('posts/'+ id, false, data);
 
 // GET
-const getData = () => Get('data-post?_sort=id&_order=desc', false);
+const getData = () => Get('posts?_sort=id&_order=desc', false);
 
 // DELETE
-const deleteData = (id) => Delete('data-post/'+ id, false);
+const deleteData = (id) => Delete('posts/'+ id, false);
 
 const API = {
     postData,
